@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/566bfff0d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Zach Gordon</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./assets/images/favicon.ico" alt="ZG"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">About Me</a>
+              <a class="nav-link" href="./work.html">My Work</a>
+              <a class="nav-link" href="./contact.html">Contact Me</a>
+              <a class="nav-link" href="./store.html">My Store</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container" id="about">
+      <div class="content">
+        <h1>About Me</h1>
+        <p>
+          I am a junior at Kean University studying <nobr>Computer Science | Cybersecurity.</nobr>
+        </p>
+        <p>
+          In my (very limited) free time, I like to play the drums, watch movies, and spend time
+          with my bearded dragon Gus, puggle Bailey, and cat Mick.
+          <nobr>I also have a passion for</nobr>
+          aviation, as well as live music.
+        </p>
+        <h3>Skills</h3>
+        <div id="skills">
+          <ul>
+            <li>Java</li>
+            <li>Object Oriented Programming</li>
+            <li>Data Structures</li>
+            <li>JavaScript / Node.js</li>
+            <li>HTML5 / CSS3</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+        <br />
+
+        <article id="projects">
+          <h3 class="header" id="projects-header">My Projects</h3>
+
+          <!-- GIFORECAST -->
+          <section id="projects">
+            <div class="project-header">
+              <h2 class="project">Giforecast</h2>
+
+              <img class="project-img" src="./assets/images/sunny.png" alt="giforecast" />
+            </div>
+            <div class="project-info">
+              <p>
+                Giforecast is a web application where users can put in a zip code and it will return
+                the current forecast (Open Weather API) and a corresponding gif (Giphy API).
+              </p>
+              <h3>Technologies I Used</h3>
+              <p>HTML, CSS, JavaScript, jQuery, AJAX</p>
+            </div>
+          </section>
+          <br />
+          <hr />
+
+          <!-- ZFH -->
+          <section>
+            <div class="project-header">
+              <h2 class="project">Zach's Fish House</h2>
+
+              <img
+                id="zfh-img"
+                class="project-img"
+                src="./assets/images/zfh.png"
+                alt="Zach's Fish House"
+              />
+            </div>
+
+            <div class="project-info">
+              <p>
+                Zach's Fish House is a full CRUD application adhering to the MVC file structure and
+                uses all 7 RESTful routes. ZFH allows users to select a fish, see information about,
+                and "buy" the fish if it is still in stock. This app also uses authorization to
+                allow users to make an account and log in. Once users are logged in they are able to
+                "sell" fish and edit or delete the fish that they have listed.
+              </p>
+              <h3>Technologies I Used</h3>
+              <p>Node.js, Express, EJS, CSS, MongoDB, Mongoose, Semantic UI, Bootstrap, bcrypt</p>
+            </div>
+          </section>
+          <br />
+          <hr />
+
+          <!-- RUMBLE -->
+          <section>
+            <div class="project-header">
+              <h2 class="project">RUMBLE</h2>
+              <img class="project-img" src="./assets/images/rumble.png" alt="RUMBLE" />
+            </div>
+            <div class="project-info">
+              <p>
+                RUMBLE was a group project where users are shown two babies and they can vote on
+                whichever they think is cuter. The winner stays on and is matched up against another
+                baby.
+              </p>
+              <h3>Technologies I Used</h3>
+              <p>React, JSX, CSS, Express, MongoDB, Mongoose, Bootstrap, bcrypt</p>
+            </div>
+          </section>
+          <br />
+          <hr />
+
+          <!-- ICYMI -->
+          <section>
+            <div class="project-header">
+              <h2 class="project">In Case You Missed It</h2>
+              <img id="icymi-img" class="project-img" src="./assets/images/icymi.png" alt="ICYMI" />
+            </div>
+            <div class="project-info">
+              <p>
+                In Case You Missed It (ICYMI) is an app that allows you to see setlists from
+                previous concerts (setlist.fm API). Just pick the artist you like and select one of
+                their shows.
+              </p>
+              <h3>Technologies I Used</h3>
+              <p>Ruby on Rails, ERB, CSS, PostgreSQL, Bootstrap</p>
+            </div>
+          </section>
+          <br />
+          <br />
+        </article>
+        <footer class="align-items-center py-3 my-4">
+          <span class="mb-3 mb-md-0">© 2023 Zach Gordon</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

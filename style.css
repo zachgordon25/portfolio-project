@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+.container,
+.container-fluid {
+  color: #fff;
+}
+
+.content {
+  text-align: center;
+}
+
+#headshot {
+  height: 300px;
+  width: auto;
+  margin-top: 10%;
+  border: 3px solid #777;
+  border-radius: 5px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.fas,
+.fab {
+  font-size: 50px;
+  padding: 5px;
+}
+
+.fa-phone-square {
+  color: #92c644;
+}
+
+.fa-envelope-square {
+  color: #6d0b94;
+}
+
+.fa-linkedin {
+  color: #337bf6;
+}
+
+.fa-github {
+  color: #999;
+}
+
+/* CONTACT */
+#contact {
+  margin-top: 50px;
+  text-align: center;
+}
+
+h2 {
+  padding: 10px;
+}
+
+h1,
+h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+#send {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-outline-success {
+  border: 1.5px solid #fff;
+  color: #fff;
+}
+
+.btn-outline-success:hover {
+  background: transparent;
+  border-color: #2ccc40;
+  color: #2ccc40;
+}
+
+/* RESUME */
+#work {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.experience {
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.experience > ul > li {
+  padding: 8px;
+}
+
+li::before {
+  content: '-';
+  padding-right: 2px;
+}
+
+/* ABOUT */
+#about {
+  max-width: 90%;
+}
+
+#about > .content > h1 {
+  margin-top: 20%;
+}
+
+#skills {
+  text-align: center;
+}
+
+#skills > ul {
+  display: inline-block;
+}
+
+/* PROJECTS */
+section {
+  margin-top: 20px;
+}
+
+.project-info {
+  margin-top: 50px;
+}
+
+.project-img {
+  max-height: 500px;
+  width: 100%;
+}
+.project {
+  color: #fff;
+}
+
+#icymi-img {
+  height: auto;
+  width: 300px;
+}
+
+@media (min-width: 500px) {
+  #work,
+  #about {
+    max-width: 75%;
+  }
+
+  #about > .content > h1 {
+    margin-top: 10%;
+  }
+
+  section {
+    margin-top: 50px;
+  }
+
+  .project-info {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .project-img,
+  #icymi-img {
+    height: 300px;
+    width: auto;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
